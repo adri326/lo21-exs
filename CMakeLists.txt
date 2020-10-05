@@ -18,6 +18,10 @@ add_executable(1-01-alt src/1-01/alternative.c ${GLOBS})
 project(1-02)
 add_executable(1-02 src/1-02/main.c ${GLOBS})
 
+project(1-02-alt)
+add_executable(1-02-alt src/1-02/alternative.c ${GLOBS})
+target_link_libraries(1-02-alt m)
+
 project(2-04)
 add_executable(2-04 src/2-04/main.c ${GLOBS})
 

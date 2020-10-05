@@ -17,3 +17,12 @@ add_executable(1-02 src/1-02/main.c ${GLOBS})
 
 project(2-04)
 add_executable(2-04 src/2-04/main.c ${GLOBS})
+
+project(4-01)
+add_executable(4-01 src/4-01/main.c ${GLOBS})
+
+project(4-02)
+add_executable(4-02 src/4-02/main.c ${GLOBS})
+
+project(4-03)
+add_executable(4-03 src/4-03/main.c ${GLOBS})

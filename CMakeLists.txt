@@ -12,6 +12,9 @@ set(GLOBS ${GLOB_HEADERS} ${GLOB_SOURCES})
 project(1-01)
 add_executable(1-01 src/1-01/main.c ${GLOBS})
 
+project(1-01-alt)
+add_executable(1-01-alt src/1-01/alternative.c ${GLOBS})
+
 project(1-02)
 add_executable(1-02 src/1-02/main.c ${GLOBS})
 

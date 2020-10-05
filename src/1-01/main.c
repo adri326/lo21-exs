@@ -2,16 +2,12 @@
 #include <stdio.h>
 #include <inttypes.h>
 #include "../macros.h"
-// #include <stdbool.h>
 
-// Step 1: define the different variables, datas, results, the different equations (mathematical formalization)
-// Step 2: define a recursive sequence / function
-// Step 3: define an algorithm that will give the result
-
-/**
-
+/** Integrates 1/x over [a; b] with `n` trapezoids
+    @param a Lower integral bound
+    @param b Higher integral bound
+    @param n Number of trapezoids
 **/
-
 float trapezoid_integration(float a, float b, uint32_t n);
 
 int main(int argc, char* argv[]) {
@@ -43,12 +39,6 @@ int main(int argc, char* argv[]) {
     printf("I = %f\n", trapezoid_integration(a, b, n));
 }
 
-/** Integrates 1/x over [a; b] with `n` trapezoids
-
-    @param a Lower integral bound
-    @param b Higher integral bound
-    @param n Number of trapezoids
-**/
 float trapezoid_integration(float a, float b, uint32_t n) {
     ASSERT(a <= b);
     ASSERT(n > 0);

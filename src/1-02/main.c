@@ -3,6 +3,13 @@
 #include <inttypes.h>
 #include "../macros.h"
 
+/**
+    Computes the result of P(x) (P ∈ ℝ[X])
+    @param l - The length of `a`
+    @param a - The terms of `P`
+    @param x - The value at which `P(x)` is computed
+    @returns P(x)
+**/
 float polynome(const size_t l, const float a[], const float x);
 
 int main(int argc, char* argv[]) {

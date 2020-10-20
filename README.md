@@ -21,6 +21,8 @@ make -j
 
 ## Notes and initial definitions
 
+The syntax for algorithms in this repository is a more distilled down form of [what you'd find at school](http://laure.gonnord.org/pro/teaching/AlgoProg1112_IMA/syntaxe_algo_C_Matlab.pdf).
+
 Following are initial definitions of algorithmical syntaxes used throughout this repository:
 
 ### Operators

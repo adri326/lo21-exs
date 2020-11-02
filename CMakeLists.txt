@@ -1,5 +1,7 @@
 cmake_minimum_required(VERSION 3.15)
 
+include(dependencies/lists/include.cmake)
+
 set(GLOB_HEADERS
     src/macros.h
 )
@@ -36,6 +38,11 @@ add_executable(4-03 src/4-03/main.c ${GLOBS})
 
 project(6-01)
 add_executable(6-01 src/6-01/main.c src/6-01/int_ll.h src/6-01/int_ll.c ${GLOBS})
+
+project(8-01)
+add_executable(8-01 src/8-01/main.c)
+target_link_libraries(8-01 PUBLIC lists-c)
+target_include_directories(8-01 PUBLIC ${LISTS_C_INCLUDE_DIR})
 
 project(base)
 add_executable(base src/base/main.c src/6-01/int_ll.h src/6-01/int_ll.c ${GLOBS})

@@ -1,0 +1,3 @@
+[submodule "dependencies/lists"]
+	path = dependencies/lists
+	url = https://github.com/adri326/lists.c

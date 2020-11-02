@@ -4,11 +4,24 @@ Exercises for "LO21" (algorithmics and programmation)
 
 ## Installation
 
+Note that you will need:
+
+- A relatively modern version of `git`
+- GNU Make
+- CMake, version `3.15` or higher
+- A C compiler that is C99-compliant (gcc, clang, ...)
+
 Clone this repository:
 
 ```sh
+# If you have git >= 2.13, then you may run the following:
+git clone --recurse-submodules https://github.com/adri326/lo21-exs
+cd lo21-exs
+
+# If your git version is still running behind, you shall run:
 git clone https://github.com/adri326/lo21-exs
 cd lo21-exs
+git submodule update --init --recursive
 ```
 
 Then build the project:
@@ -36,8 +49,8 @@ Following are initial definitions of algorithmical syntaxes used throughout this
 
 ### Expression groups
 
-For ease of writing, a more complex expression may be split into a set of instructions, followed by a return statement, which will yield the result of that return statement.
-Such a splitting is enclosed within curly brackets `{}`:
+For ease of writing, a more complex expression may be isolated into a set of instructions, followed by a return statement, which will yield the result of that return statement.
+Such an isolated section is enclosed within curly brackets `{}`:
 
 ```py
 x <- (a % 3) * 4 - 2 * max(b, 3)

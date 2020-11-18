@@ -46,3 +46,11 @@ target_include_directories(8-01 PUBLIC ${LISTS_C_INCLUDE_DIR})
 
 project(base)
 add_executable(base src/base/main.c src/6-01/int_ll.h src/6-01/int_ll.c ${GLOBS})
+
+project(recursive-length)
+add_executable(recursive-length src/recursive-length/main.c)
+target_link_libraries(recursive-length PUBLIC lists-c)
+target_include_directories(recursive-length PUBLIC ${LISTS_C_INCLUDE_DIR})
+
+project(11-01)
+add_executable(11-01 src/11-01/main.c src/11-01/btree.c src/11-01/btree.h ${GLOBS})
